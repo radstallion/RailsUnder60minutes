@@ -2,3 +2,5 @@
 <p><%= @post.body%></p>
 <hr>
 <%= link_to "edit" , edit_post_path(@post), :class=>"btn btn-primary" %>
+<%= link_to "delete", @post, method: :delete,
+                                  data: { confirm: "You sure?" } %>
